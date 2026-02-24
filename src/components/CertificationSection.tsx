@@ -11,17 +11,37 @@ import certSiemens from "@/assets/cert-siemens.png";
 import certTataDataviz from "@/assets/cert-tata-dataviz.png";
 import certTataGenai from "@/assets/cert-tata-genai.png";
 import certLloydsUx from "@/assets/cert-lloyds-ux.png";
+import certXboxUx from "@/assets/cert-xbox-ux.png";
+import certAccenture from "@/assets/cert-accenture.png";
+import certProductAi from "@/assets/cert-product-ai.png";
+import certAgileDesign from "@/assets/cert-agile-design.png";
+import certHypothesis from "@/assets/cert-hypothesis.png";
+import certAgileTeam from "@/assets/cert-agile-team.png";
+import certUxWriting from "@/assets/cert-ux-writing.png";
+import certSapUi5 from "@/assets/cert-sap-ui5.png";
+import certSapFiori from "@/assets/cert-sap-fiori.png";
+import certSapFioriRap from "@/assets/cert-sap-fiori-rap.png";
 
 const partners = ["Microsoft", "Google Cloud", "AWS Educate", "Adobe", "Cisco", "Tech Mahindra", "Genpact", "NASSCOM"];
 
 const additionalCerts = [
   { img: certGoogleUx, title: "Google UX Design", org: "Coursera · Google", desc: "Professional Certificate — 8 courses covering the full UX design process from research to prototyping." },
   { img: certMicrosoftUx, title: "Microsoft UX Design", org: "Coursera · Microsoft", desc: "Professional Certificate — 4 courses in UI/UX fundamentals, prototyping, and accessibility." },
+  { img: certXboxUx, title: "Interaction Design & UX/UI Principles", org: "Coursera · Xbox", desc: "Course on interaction design and UX/UI principles authorized by Xbox." },
   { img: certIbmUx, title: "UX Design Fundamentals", org: "IBM SkillsBuild", desc: "User Experience Design Fundamentals credential issued by IBM-SkillsBuild." },
   { img: certLloydsUx, title: "UX Design Advanced", org: "Lloyds Banking Group · Forage", desc: "Advanced job simulation covering customer research, value propositions, and presentation design." },
+  { img: certUxWriting, title: "UX Content & Interface Strategy", org: "Coursera · Packt", desc: "Writing is Designing — UX content strategy and interface writing." },
+  { img: certProductAi, title: "Product Analytics and AI", org: "Coursera · UVA Darden", desc: "Product analytics and AI from the Darden School of Business." },
+  { img: certAgileDesign, title: "Agile Meets Design Thinking", org: "Coursera · UVA Darden", desc: "Combining agile methodology with design thinking principles." },
+  { img: certHypothesis, title: "Hypothesis-Driven Development", org: "Coursera · UVA Darden", desc: "Data-driven product development through hypothesis testing." },
+  { img: certAgileTeam, title: "Managing an Agile Team", org: "Coursera · UVA Darden", desc: "Leading and managing agile teams effectively." },
+  { img: certAccenture, title: "Strategy Consulting Simulation", org: "Accenture · Forage", desc: "Strategy consulting tasks including user journey redesign and prioritisation." },
   { img: certDeloitteData, title: "Data Analytics Simulation", org: "Deloitte · Forage", desc: "Practical tasks in data analysis and forensic technology." },
   { img: certDeloitteTech, title: "Technology Simulation", org: "Deloitte · Forage", desc: "Practical tasks in coding and development." },
   { img: certSap, title: "Technical Consulting Simulation", org: "SAP · Forage", desc: "Tasks in data assembly, analysis, and presenting results." },
+  { img: certSapUi5, title: "Advanced SAPUI5 Development", org: "SAP Learning", desc: "Intermediate-level course on full-screen and list-detail applications with UI5 controls." },
+  { img: certSapFiori, title: "SAP Fiori Elements App Development", org: "SAP Learning", desc: "Developing SAP Fiori Elements apps based on CAP OData V4 Service." },
+  { img: certSapFioriRap, title: "SAP Fiori Elements with RAP", org: "SAP Learning", desc: "Creating SAP Fiori Elements apps based on OData V4 RAP Service." },
   { img: certSiemens, title: "Project Manager Simulation", org: "Siemens · Forage", desc: "Developing KPIs and managing project dashboards." },
   { img: certTataDataviz, title: "Data Visualisation", org: "Tata · Forage", desc: "Business scenario framing, choosing visuals, and communicating insights." },
   { img: certTataGenai, title: "GenAI Data Analytics", org: "Tata · Forage", desc: "Exploratory data analysis, risk profiling, and AI-driven collections strategy." },
