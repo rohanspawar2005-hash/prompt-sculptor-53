@@ -21,6 +21,7 @@ import certUxWriting from "@/assets/cert-ux-writing.png";
 import certSapUi5 from "@/assets/cert-sap-ui5.png";
 import certSapFiori from "@/assets/cert-sap-fiori.png";
 import certSapFioriRap from "@/assets/cert-sap-fiori-rap.png";
+import certMicrosoftAi from "@/assets/cert-microsoft-ai.png";
 
 const partners = ["Microsoft", "Google Cloud", "AWS Educate", "Adobe", "Cisco", "Tech Mahindra", "Genpact", "NASSCOM"];
 
@@ -45,6 +46,7 @@ const additionalCerts = [
   { img: certSiemens, title: "Project Manager Simulation", org: "Siemens · Forage", desc: "Developing KPIs and managing project dashboards." },
   { img: certTataDataviz, title: "Data Visualisation", org: "Tata · Forage", desc: "Business scenario framing, choosing visuals, and communicating insights." },
   { img: certTataGenai, title: "GenAI Data Analytics", org: "Tata · Forage", desc: "Exploratory data analysis, risk profiling, and AI-driven collections strategy." },
+  { img: certMicrosoftAi, title: "Microsoft AI Strategy for Sustainability", org: "Microsoft Learn", desc: "Defining a Microsoft AI strategy to create business value in sustainability." },
 ];
 
 const CertificationSection = () => {
