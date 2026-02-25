@@ -92,25 +92,6 @@ const HeroSection = () => {
             </span>
           </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.9, ease: e }}
-            className="absolute bottom-24 md:bottom-40 left-0 md:-left-8 bg-base/85 backdrop-blur-md border border-white/10 px-5 py-4"
-          >
-            <span className="text-gold text-3xl font-extrabold">6+</span>
-            <span className="block eyebrow text-text-tertiary mt-1">CASE STUDIES</span>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 1.1, ease: e }}
-            className="absolute top-32 md:top-40 left-4 md:-left-4 bg-base/85 backdrop-blur-md border border-white/10 px-5 py-4"
-          >
-            <span className="text-gold text-3xl font-extrabold">100+</span>
-            <span className="block eyebrow text-text-tertiary mt-1">SCREENS DESIGNED</span>
-          </motion.div>
         </div>
       </div>
 
