@@ -1,10 +1,13 @@
 import ScrollReveal from "./ScrollReveal";
+import { Search, Compass, PenTool, BarChart3 } from "lucide-react";
+
+const iconMap = [Search, Compass, PenTool, BarChart3];
 
 const steps = [
-  { num: "01", icon: "🔍", title: "Discover", desc: "Understand the user's world through research, interviews, and empathy mapping. No assumptions — only evidence." },
-  { num: "02", icon: "📐", title: "Define", desc: "Translate insights into problem statements, user journeys, and information architecture. Clarity before creativity." },
-  { num: "03", icon: "✏️", title: "Design", desc: "Iterative wireframes to high-fidelity prototypes. Every layout decision is intentional, every interaction deliberate." },
-  { num: "04", icon: "📊", title: "Validate", desc: "Test with real users. Gather data. Refine until the experience is not just functional — but frictionless." },
+  { num: "01", title: "Discover", desc: "Understand the user's world through research, interviews, and empathy mapping. No assumptions — only evidence." },
+  { num: "02", title: "Define", desc: "Translate insights into problem statements, user journeys, and information architecture. Clarity before creativity." },
+  { num: "03", title: "Design", desc: "Iterative wireframes to high-fidelity prototypes. Every layout decision is intentional, every interaction deliberate." },
+  { num: "04", title: "Validate", desc: "Test with real users. Gather data. Refine until the experience is not just functional — but frictionless." },
 ];
 
 const ProcessSection = () => {
@@ -27,7 +30,7 @@ const ProcessSection = () => {
                 className={`relative p-8 group transition-colors duration-500 hover:bg-white/[0.02] ${i > 0 ? "border-t md:border-t-0 md:border-l border-white/[0.07]" : ""}`}
               >
                 <span className="eyebrow text-text-tertiary">{step.num}</span>
-                <div className="text-3xl mt-4 mb-3">{step.icon}</div>
+                {(() => { const Icon = iconMap[i]; return <Icon className="mt-4 mb-3 text-gold" size={28} strokeWidth={1.5} />; })()}
                 <h3 className="text-sm font-bold text-text-primary tracking-wide">{step.title}</h3>
                 <p className="text-xs text-text-secondary mt-2 leading-[1.8]">{step.desc}</p>
                 {/* Bottom sweep line */}

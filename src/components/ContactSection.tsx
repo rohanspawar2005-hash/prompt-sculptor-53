@@ -1,10 +1,11 @@
 import ScrollReveal from "./ScrollReveal";
+import { Linkedin, Mail, Palette, Camera } from "lucide-react";
 
 const contactLinks = [
-  { icon: "💼", label: "LinkedIn", value: "Rohan Pawar", href: "https://www.linkedin.com/in/rohan-pawar-a54434345/" },
-  { icon: "✉️", label: "Email", value: "rohanspawar2005@gmail.com", href: "mailto:rohanspawar2005@gmail.com" },
-  { icon: "🎨", label: "Instagram — Design Work", value: "@dzignr_5", href: "https://www.instagram.com/dzignr_5?igsh=MXMyMWo0bDZzeTNncg==" },
-  { icon: "📷", label: "Instagram — Personal", value: "@rohan_pawar.515", href: "https://www.instagram.com/rohan_pawar.515?igsh=NmdzbDJrbmJzbG4x" },
+  { icon: Linkedin, label: "LinkedIn", value: "Rohan Pawar", href: "https://www.linkedin.com/in/rohan-pawar-a54434345/" },
+  { icon: Mail, label: "Email", value: "rohanspawar2005@gmail.com", href: "mailto:rohanspawar2005@gmail.com" },
+  { icon: Palette, label: "Instagram — Design Work", value: "@dzignr_5", href: "https://www.instagram.com/dzignr_5?igsh=MXMyMWo0bDZzeTNncg==" },
+  { icon: Camera, label: "Instagram — Personal", value: "@rohan_pawar.515", href: "https://www.instagram.com/rohan_pawar.515?igsh=NmdzbDJrbmJzbG4x" },
 ];
 
 const ContactSection = () => {
@@ -54,7 +55,7 @@ const ContactSection = () => {
               >
                 {/* Left gold bar */}
                 <span className="w-[2px] h-0 bg-gold transition-all duration-300 group-hover:h-10 self-center" />
-                <span className="text-2xl">{link.icon}</span>
+                <link.icon className="text-gold" size={22} strokeWidth={1.5} />
                 <div className="flex-1">
                   <span className="eyebrow text-text-tertiary">{link.label}</span>
                   <span className="block text-sm font-semibold text-text-primary mt-1 transition-colors duration-300 group-hover:text-gold">
