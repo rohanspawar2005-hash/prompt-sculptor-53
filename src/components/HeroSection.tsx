@@ -18,7 +18,7 @@ const HeroSection = () => {
             className="flex items-center gap-4 mb-8"
           >
             <span className="block w-8 h-[1px] bg-gold" />
-            <span className="eyebrow text-gold">UI/UX Designer & User Advocate</span>
+            <span className="text-gold text-[12px] font-bold tracking-[4px] uppercase">UI/UX Designer & User Advocate</span>
           </motion.div>
 
           <motion.h1
