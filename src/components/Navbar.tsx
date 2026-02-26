@@ -23,7 +23,7 @@ const Navbar = () => {
     <nav
       className="fixed top-0 left-0 right-0 z-[100] transition-all duration-500"
       style={{
-        height: 60,
+        height: 72,
         backgroundColor: scrolled ? "rgba(12,12,12,0.94)" : "transparent",
         backdropFilter: scrolled ? "blur(16px)" : "none",
         borderBottom: scrolled ? "1px solid rgba(255,255,255,0.07)" : "1px solid transparent",
@@ -31,7 +31,7 @@ const Navbar = () => {
     >
       <div className="max-w-[1400px] mx-auto h-full flex items-center justify-between px-6 md:px-10">
         {/* Brand */}
-        <a href="#home" className="text-gold font-extrabold text-[11px] tracking-[5px]">
+        <a href="#home" className="text-gold font-extrabold text-[14px] tracking-[5px]">
           DZiGNR_5
         </a>
 
@@ -41,7 +41,7 @@ const Navbar = () => {
             <a
               key={link.href}
               href={link.href}
-              className="relative text-[10px] font-semibold tracking-[3px] uppercase text-text-secondary hover:text-text-primary transition-colors duration-300 group"
+              className="relative text-[12px] font-semibold tracking-[3px] uppercase text-text-secondary hover:text-text-primary transition-colors duration-300 group"
             >
               {link.label}
               <span className="absolute bottom-[-4px] left-0 h-[1px] w-0 bg-gold transition-all duration-300 group-hover:w-full" />
@@ -51,7 +51,7 @@ const Navbar = () => {
             href="https://www.linkedin.com/in/rohan-pawar-a54434345/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[10px] font-semibold tracking-[3px] uppercase border border-white/15 px-5 py-2 text-text-primary hover:bg-gold hover:text-base hover:border-gold transition-all duration-300"
+            className="text-[12px] font-semibold tracking-[3px] uppercase border border-white/15 px-5 py-2 text-text-primary hover:bg-gold hover:text-base hover:border-gold transition-all duration-300"
           >
             LinkedIn ↗
           </a>
@@ -71,13 +71,13 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden absolute top-[60px] left-0 right-0 bg-base/95 backdrop-blur-xl border-b border-white/5 py-8 px-6 flex flex-col gap-6">
+        <div className="md:hidden absolute top-[72px] left-0 right-0 bg-base/95 backdrop-blur-xl border-b border-white/5 py-8 px-6 flex flex-col gap-6">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
               onClick={() => setMobileOpen(false)}
-              className="text-[11px] font-semibold tracking-[3px] uppercase text-text-secondary hover:text-gold transition-colors"
+              className="text-[13px] font-semibold tracking-[3px] uppercase text-text-secondary hover:text-gold transition-colors"
             >
               {link.label}
             </a>
