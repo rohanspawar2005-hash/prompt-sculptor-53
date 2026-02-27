@@ -57,7 +57,7 @@ const ContactSection = () => {
                 <span className="w-[2px] h-0 bg-gold transition-all duration-300 group-hover:h-10 self-center" />
                 <link.icon className="text-gold" size={22} strokeWidth={1.5} />
                 <div className="flex-1">
-                  <span className="eyebrow text-text-tertiary">{link.label}</span>
+                  <span className="text-[10px] font-bold tracking-[3px] uppercase text-text-secondary">{link.label}</span>
                   <span className="block text-sm font-semibold text-text-primary mt-1 transition-colors duration-300 group-hover:text-gold">
                     {link.value}
                   </span>
