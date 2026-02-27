@@ -15,7 +15,7 @@ const ProcessSection = () => {
     <section className="section-padding" style={{ backgroundColor: "#161616" }}>
       <div className="max-w-[1400px] mx-auto">
         <ScrollReveal>
-          <span className="eyebrow text-text-tertiary">Methodology</span>
+          <span className="text-[12px] font-bold tracking-[3px] uppercase text-text-secondary">Methodology</span>
           <h2 className="mt-4 mb-12">
             <span className="heading-bold">Design </span>
             <span className="heading-thin">Process</span>
@@ -29,7 +29,7 @@ const ProcessSection = () => {
                 key={step.num}
                 className={`relative p-8 group transition-colors duration-500 hover:bg-white/[0.02] ${i > 0 ? "border-t md:border-t-0 md:border-l border-white/[0.07]" : ""}`}
               >
-                <span className="eyebrow text-text-tertiary">{step.num}</span>
+                <span className="text-[10px] font-bold tracking-[3px] uppercase text-text-secondary">{step.num}</span>
                 {(() => { const Icon = iconMap[i]; return <Icon className="mt-4 mb-3 text-gold" size={28} strokeWidth={1.5} />; })()}
                 <h3 className="text-sm font-bold text-text-primary tracking-wide">{step.title}</h3>
                 <p className="text-xs text-text-primary/80 mt-2 leading-[1.8]">{step.desc}</p>

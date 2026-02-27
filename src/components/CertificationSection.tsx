@@ -84,7 +84,7 @@ const CertificationSection = () => {
             </ScrollReveal>
             <ScrollReveal delay={0.25}>
               <div className="mt-8">
-                <span className="eyebrow text-text-tertiary block mb-3">Industry Partners</span>
+                <span className="text-[12px] font-bold tracking-[3px] uppercase text-text-secondary block mb-3">Industry Partners</span>
                 <div className="flex flex-wrap gap-2">
                   {partners.map((p) => (<span key={p} className="pill-chip">{p}</span>))}
                 </div>
@@ -96,7 +96,7 @@ const CertificationSection = () => {
         {/* Additional Certifications Grid */}
         <div className="mt-20">
           <ScrollReveal>
-            <span className="eyebrow text-text-tertiary">Additional Credentials</span>
+            <span className="text-[12px] font-bold tracking-[3px] uppercase text-text-secondary">Additional Credentials</span>
             <h3 className="mt-4 mb-10">
               <span className="heading-bold text-3xl md:text-4xl block">Professional</span>
               <span className="heading-thin text-3xl md:text-4xl block">Certifications.</span>
