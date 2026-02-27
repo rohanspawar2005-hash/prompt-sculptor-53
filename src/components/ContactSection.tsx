@@ -62,7 +62,7 @@ const ContactSection = () => {
                     {link.value}
                   </span>
                 </div>
-                <span className="text-text-tertiary text-sm transition-colors duration-300 group-hover:text-gold">→</span>
+                <span className="text-text-secondary text-lg font-bold transition-colors duration-300 group-hover:text-gold">→</span>
               </a>
             </ScrollReveal>
           ))}
