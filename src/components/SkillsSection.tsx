@@ -30,7 +30,7 @@ const SkillBar = ({ name, score, desc, delay }: { name: string; score: number; d
           }}
         />
       </div>
-      <p className="text-xs text-text-tertiary mt-1.5">{desc}</p>
+      <p className="text-xs text-text-secondary mt-1.5">{desc}</p>
     </div>
   );
 };

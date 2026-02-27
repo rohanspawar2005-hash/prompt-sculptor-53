@@ -32,7 +32,7 @@ const ProcessSection = () => {
                 <span className="eyebrow text-text-tertiary">{step.num}</span>
                 {(() => { const Icon = iconMap[i]; return <Icon className="mt-4 mb-3 text-gold" size={28} strokeWidth={1.5} />; })()}
                 <h3 className="text-sm font-bold text-text-primary tracking-wide">{step.title}</h3>
-                <p className="text-xs text-text-secondary mt-2 leading-[1.8]">{step.desc}</p>
+                <p className="text-xs text-text-primary/80 mt-2 leading-[1.8]">{step.desc}</p>
                 {/* Bottom sweep line */}
                 <span className="absolute bottom-0 left-0 h-[2px] w-0 bg-gold transition-all duration-500 group-hover:w-full" />
               </div>
