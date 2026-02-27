@@ -22,7 +22,7 @@
     --secondary-foreground: 36 18% 93%;
 
     --muted: 0 0% 9%;
-    --muted-foreground: 30 5% 59%;
+    --muted-foreground: 30 5% 72%;
 
     --accent: 34 34% 63%;
     --accent-foreground: 0 0% 5%;
@@ -41,8 +41,8 @@
     --color-base-lighter: #161616;
     --color-gold: #c8a87a;
     --color-text-primary: #f0ede8;
-    --color-text-secondary: #9a9690;
-    --color-text-tertiary: #5c5956;
+    --color-text-secondary: #c2bdb6;
+    --color-text-tertiary: #8a8580;
 
     --sidebar-background: 0 0% 5%;
     --sidebar-foreground: 36 18% 93%;
