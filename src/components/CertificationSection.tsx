@@ -117,7 +117,7 @@ const CertificationSection = () => {
                   <div className="p-5">
                     <span className="text-[9px] font-bold tracking-[2px] uppercase text-gold">{cert.org}</span>
                     <h4 className="mt-2 text-sm font-bold text-text-primary leading-snug">{cert.title}</h4>
-                    <p className="mt-2 text-xs text-text-tertiary leading-relaxed">{cert.desc}</p>
+                    <p className="mt-2 text-xs text-text-secondary leading-relaxed">{cert.desc}</p>
                   </div>
                 </div>
               </ScrollReveal>

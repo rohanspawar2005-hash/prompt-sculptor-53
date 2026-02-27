@@ -68,11 +68,11 @@ const WorkSection = () => {
                     <span className="md:hidden text-text-tertiary mr-2">{p.num}.</span>
                     {p.title}
                   </h3>
-                  <p className="text-xs text-text-secondary mt-1 leading-[1.7]">{p.desc}</p>
+                  <p className="text-xs text-text-primary/80 mt-1 leading-[1.7]">{p.desc}</p>
                 </div>
                 <div className="flex flex-wrap gap-1.5 mt-3 md:mt-0">
                   {p.tags.map((t) => (
-                    <span key={t} className="text-[9px] font-semibold tracking-[1px] uppercase border border-white/10 px-2.5 py-1 text-text-tertiary">
+                    <span key={t} className="text-[9px] font-semibold tracking-[1px] uppercase border border-white/10 px-2.5 py-1 text-text-secondary">
                       {t}
                     </span>
                   ))}
