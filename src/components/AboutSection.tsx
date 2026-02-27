@@ -32,7 +32,7 @@ const AboutSection = () => {
         {/* Right — Text */}
         <div>
           <ScrollReveal>
-            <span className="eyebrow text-text-tertiary">My Manifesto</span>
+            <span className="text-[12px] font-bold tracking-[3px] uppercase text-text-secondary">My Manifesto</span>
           </ScrollReveal>
 
           <ScrollReveal delay={0.1}>
@@ -69,7 +69,7 @@ const AboutSection = () => {
               {metrics.map((m) => (
                 <div key={m.label} className="text-center">
                   <span className="text-gold text-3xl md:text-4xl font-extrabold">{m.value}</span>
-                  <span className="block eyebrow text-text-tertiary mt-2">{m.label}</span>
+                  <span className="block text-[12px] font-bold tracking-[3px] uppercase text-text-secondary mt-2">{m.label}</span>
                 </div>
               ))}
             </div>

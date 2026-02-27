@@ -66,7 +66,7 @@ const HeroSection = () => {
             transition={{ duration: 1, delay: 1.2 }}
             className="mt-16 hidden md:flex items-center gap-3"
           >
-            <span className="eyebrow text-text-tertiary">Scroll to explore</span>
+            <span className="text-[12px] font-bold tracking-[3px] uppercase text-text-secondary">Scroll to explore</span>
             <div className="relative w-[1px] h-8 bg-white/10 overflow-hidden">
               <div className="absolute top-0 left-0 w-full bg-gold" style={{ height: "100%", animation: "scanline 2s ease-in-out infinite" }} />
             </div>

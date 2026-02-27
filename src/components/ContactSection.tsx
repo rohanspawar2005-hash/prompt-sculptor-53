@@ -15,7 +15,7 @@ const ContactSection = () => {
         {/* Left */}
         <div>
           <ScrollReveal>
-            <span className="eyebrow text-text-tertiary">Get in Touch</span>
+            <span className="text-[12px] font-bold tracking-[3px] uppercase text-text-secondary">Get in Touch</span>
           </ScrollReveal>
 
           <ScrollReveal delay={0.1}>

@@ -42,7 +42,7 @@ const SkillsSection = () => {
         {/* Left */}
         <div>
           <ScrollReveal>
-            <span className="eyebrow text-text-tertiary">Expertise</span>
+            <span className="text-[12px] font-bold tracking-[3px] uppercase text-text-secondary">Expertise</span>
             <h2 className="mt-4">
               <span className="heading-bold block">Core</span>
               <span className="heading-thin block">Skillset</span>

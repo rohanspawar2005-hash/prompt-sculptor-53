@@ -45,7 +45,7 @@ const WorkSection = () => {
       <div className="max-w-[1400px] mx-auto">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
           <ScrollReveal>
-            <span className="eyebrow text-text-tertiary">Portfolio</span>
+            <span className="text-[12px] font-bold tracking-[3px] uppercase text-text-secondary">Projects</span>
             <h2 className="mt-4">
               <span className="heading-bold">Selected </span>
               <span className="heading-thin">Work</span>
