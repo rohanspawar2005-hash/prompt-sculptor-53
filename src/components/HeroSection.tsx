@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import heroPortrait from "@/assets/hero-portrait.jpeg";
+import heroPortrait from "@/assets/hero-portrait-new.png";
 
 const ease = [0.22, 1, 0.36, 1] as const;
 type EaseTuple = [number, number, number, number];
