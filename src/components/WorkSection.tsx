@@ -18,6 +18,7 @@ const projects = [
     link: "https://www.figma.com/design/oM8MFlQ39pxHQjEHLxnDvn/Flight-Booking-App-UI?node-id=229-667",
     image: workAero,
     type: "Mobile",
+    imgClass: "object-contain bg-[#e84118]",
   },
   {
     num: "02",
@@ -27,6 +28,7 @@ const projects = [
     link: "https://www.figma.com/design/UtZIUU6snZCjtEZq6UFZ9t/Zomato-App-Design-Clone?node-id=0-1",
     image: workCravings,
     type: "Mobile",
+    imgClass: "object-cover object-center",
   },
   {
     num: "03",
@@ -100,11 +102,11 @@ const WorkSection = () => {
                 transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
               >
                 {/* Image Container */}
-                <div className="relative aspect-[16/10] overflow-hidden bg-white/[0.03]">
+                <div className={`relative aspect-[16/10] overflow-hidden ${p.imgClass?.includes("bg-") ? p.imgClass.split(" ").filter(c => c.startsWith("bg-")).join(" ") : "bg-white/[0.03]"}`}>
                   <motion.img
                     src={p.image}
                     alt={p.title}
-                    className="w-full h-full object-cover object-top"
+                    className={`w-full h-full ${p.imgClass || "object-cover object-top"}`}
                     animate={{
                       scale: hoveredIndex === i ? 1.05 : 1,
                     }}
