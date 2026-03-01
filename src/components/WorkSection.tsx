@@ -84,8 +84,8 @@ const WorkSection = () => {
             </h2>
           </ScrollReveal>
           <ScrollReveal delay={0.1}>
-            <p className="body-text max-w-md text-right">
-              Six projects spanning mobile apps, web platforms, and government portals — each one solving a real problem for real people.
+            <p className="body-text max-w-lg text-right">
+              Six projects spanning mobile apps, web platforms, and government portals —<br className="hidden md:inline" /> each one solving a real problem for real people.
             </p>
           </ScrollReveal>
         </div>
