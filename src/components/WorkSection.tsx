@@ -28,7 +28,7 @@ const projects = [
     link: "https://www.figma.com/design/UtZIUU6snZCjtEZq6UFZ9t/Zomato-App-Design-Clone?node-id=0-1",
     image: workCravings,
     type: "Mobile",
-    imgClass: "object-cover object-center",
+    imgClass: "object-cover object-[center_25%]",
   },
   {
     num: "03",
