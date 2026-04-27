@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { ExternalLink, MoveUpRight } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
 
 import workAero from "@/assets/work-aero.png";
@@ -161,14 +162,26 @@ const WorkSection = () => {
           {projects.map((p, i) => (
             <ScrollReveal key={p.num} delay={i * 0.08}>
               <motion.div
-                className="group relative rounded-lg overflow-hidden border border-white/[0.06] bg-white/[0.02] cursor-pointer"
+                className="group relative rounded-lg overflow-hidden border border-white/[0.06] bg-white/[0.02] cursor-pointer shadow-[0_0_0_1px_rgba(255,255,255,0.02)] transition-colors duration-500 hover:border-gold/35 hover:bg-white/[0.035]"
                 onHoverStart={() => setHoveredIndex(i)}
                 onHoverEnd={() => setHoveredIndex(null)}
-                whileHover={{ y: -4 }}
+                whileHover={{ y: -6, rotateX: 1.2, rotateY: -1.2 }}
+                whileTap={{ scale: 0.99 }}
                 transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
               >
                 {/* Image Container */}
                 <div className={`relative aspect-[16/10] overflow-hidden ${p.imgClass?.includes("bg-") ? p.imgClass.split(" ").filter(c => c.startsWith("bg-")).join(" ") : "bg-white/[0.03]"}`}>
+                  <motion.div
+                    className="pointer-events-none absolute inset-0 z-10 opacity-0 group-hover:opacity-100"
+                    animate={{
+                      backgroundPosition: hoveredIndex === i ? "140% 0%" : "-40% 0%",
+                    }}
+                    transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
+                    style={{
+                      backgroundImage: "linear-gradient(105deg, transparent 34%, rgba(200,168,122,0.2) 48%, transparent 62%)",
+                      backgroundSize: "220% 100%",
+                    }}
+                  />
                   <motion.img
                     src={p.image}
                     alt={p.title}
@@ -184,14 +197,18 @@ const WorkSection = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500" />
 
                   {/* Project number */}
-                  <span className="absolute top-4 left-4 text-[11px] font-bold tracking-[2px] text-white/40 uppercase">
+                  <span className="absolute top-4 left-4 text-[11px] font-bold tracking-[2px] text-white/40 uppercase transition-colors duration-300 group-hover:text-gold">
                     {p.num}
                   </span>
 
                   {/* Type badge */}
-                  <span className="absolute top-4 right-4 text-[9px] font-bold tracking-[2px] uppercase border border-white/20 bg-black/40 backdrop-blur-sm px-3 py-1.5 text-white/70">
+                  <motion.span
+                    className="absolute top-4 right-4 text-[9px] font-bold tracking-[2px] uppercase border border-white/20 bg-black/40 backdrop-blur-sm px-3 py-1.5 text-white/70"
+                    animate={{ y: hoveredIndex === i ? -2 : 0 }}
+                    transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
+                  >
                     {p.type}
-                  </span>
+                  </motion.span>
 
                   {/* View CTA on hover */}
                   <AnimatePresence>
@@ -208,9 +225,9 @@ const WorkSection = () => {
                             href={p.link}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="px-6 py-3 bg-gold/90 text-black text-[11px] font-bold tracking-[2px] uppercase backdrop-blur-sm hover:bg-gold transition-colors"
+                            className="inline-flex items-center gap-2 px-6 py-3 bg-gold/90 text-black text-[11px] font-bold tracking-[2px] uppercase backdrop-blur-sm hover:bg-gold transition-colors"
                           >
-                            View Project →
+                            View Project <ExternalLink size={14} strokeWidth={2.4} className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                           </a>
                         ) : (
                           <span className="px-6 py-3 border border-white/30 text-white/70 text-[11px] font-bold tracking-[2px] uppercase backdrop-blur-sm">
@@ -224,17 +241,19 @@ const WorkSection = () => {
 
                 {/* Content */}
                 <div className="p-5 md:p-6">
-                  <h3 className="text-[16px] md:text-[17px] font-bold text-text-primary group-hover:text-gold transition-colors duration-300 mb-2">
-                    {p.title}
+                  <h3 className="flex items-start justify-between gap-3 text-[16px] md:text-[17px] font-bold text-text-primary group-hover:text-gold transition-colors duration-300 mb-2">
+                    <span>{p.title}</span>
+                    <MoveUpRight size={17} className="mt-0.5 shrink-0 text-gold opacity-0 transition-all duration-300 group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:opacity-100" />
                   </h3>
                   <p className="text-[12px] text-text-primary/60 leading-[1.7] mb-4 line-clamp-2">
                     {p.desc}
                   </p>
                   <div className="flex flex-wrap gap-1.5">
-                    {p.tags.map((t) => (
+                    {p.tags.map((t, tagIndex) => (
                       <span
                         key={t}
-                        className="text-[9px] font-semibold tracking-[1px] uppercase border border-white/10 px-2.5 py-1 text-text-secondary"
+                        className="text-[9px] font-semibold tracking-[1px] uppercase border border-white/10 px-2.5 py-1 text-text-secondary transition-all duration-300 group-hover:border-gold/25 group-hover:text-text-primary"
+                        style={{ transitionDelay: `${tagIndex * 45}ms` }}
                       >
                         {t}
                       </span>
