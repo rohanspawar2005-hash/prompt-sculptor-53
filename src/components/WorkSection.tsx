@@ -8,10 +8,76 @@ import workGreengetways from "@/assets/work-greengetways.png";
 import workMsrtc from "@/assets/work-msrtc.png";
 import workEcopulse from "@/assets/work-ecopulse.png";
 import workPurevessel from "@/assets/work-purevessel.png";
+import workFlo from "@/assets/work-flo.png";
+import workBmw from "@/assets/work-bmw.png";
+import workUpdate from "@/assets/work-update.png";
+import workAbunai from "@/assets/work-abunai.png";
+import workEcole from "@/assets/work-ecole.png";
+import workWeframe from "@/assets/work-weframe.png";
 
 const projects = [
   {
     num: "01",
+    title: "FLO — Money Made Simple",
+    desc: "A clean finance experience focused on clarity, trust, and fast decision-making for everyday money management.",
+    tags: ["Web App", "Finance UX", "Live Site"],
+    link: "https://flo-money-made-simple.vercel.app/",
+    image: workFlo,
+    type: "Web",
+    imgClass: "object-contain bg-white p-10",
+  },
+  {
+    num: "02",
+    title: "BMW — Premium Automotive Website",
+    desc: "A polished brand-led automotive interface with a premium visual system and smooth path into the product experience.",
+    tags: ["Web Design", "Brand UI", "Live Site"],
+    link: "https://bmwby-rohan-p.vercel.app/",
+    image: workBmw,
+    type: "Web",
+    imgClass: "object-contain bg-black p-10",
+  },
+  {
+    num: "03",
+    title: "upDate — Launchpad Platform",
+    desc: "A modern launch experience designed with strong hierarchy, crisp messaging, and recruiter-friendly project presentation.",
+    tags: ["Web App", "Product UI", "Live Site"],
+    link: "https://update-launchpad-yvro.vercel.app/",
+    image: workUpdate,
+    type: "Web",
+    imgClass: "object-contain bg-white p-10",
+  },
+  {
+    num: "04",
+    title: "AbunAi — AI Product Website",
+    desc: "A focused AI product interface balancing concise communication, confident branding, and a smooth browsing flow.",
+    tags: ["AI Website", "Product UX", "Live Site"],
+    link: "https://abunaibydzigner5.vercel.app/",
+    image: workAbunai,
+    type: "Web",
+    imgClass: "object-contain bg-white p-10",
+  },
+  {
+    num: "05",
+    title: "Ecole Globale — International Girls' School",
+    desc: "A refined school website experience presenting institutional trust, clear information architecture, and elegant brand presence.",
+    tags: ["School Website", "UX Design", "Live Site"],
+    link: "https://school-vision-spark.vercel.app/",
+    image: workEcole,
+    type: "Web",
+    imgClass: "object-contain bg-[#822638] p-8",
+  },
+  {
+    num: "06",
+    title: "We Frame Technologies — Digital Studio",
+    desc: "A technology brand website built around credibility, visual contrast, and direct access to service-led project details.",
+    tags: ["Tech Website", "Brand UI", "Live Site"],
+    link: "https://weframetechtechnologiesbuild-bright.vercel.app/",
+    image: workWeframe,
+    type: "Web",
+    imgClass: "object-contain bg-[#070b12] p-8",
+  },
+  {
+    num: "07",
     title: "Aero — Flight Booking App",
     desc: "Reducing booking anxiety through a linear, minimalist interface. High-contrast hierarchy, spacious inputs — frictionless trust-building from search to seat selection.",
     tags: ["Mobile App", "UX Research", "Figma"],
@@ -21,7 +87,7 @@ const projects = [
     imgClass: "object-contain bg-[#e84118]",
   },
   {
-    num: "02",
+    num: "08",
     title: "Seamless Cravings — Food Delivery UX",
     desc: "Friction-free ordering with granular customisation and checkout transparency. Highly visual home screen with a detailed item customisation modal for full user control.",
     tags: ["Mobile App", "E-Commerce", "Figma"],
@@ -31,7 +97,7 @@ const projects = [
     imgClass: "object-cover object-[center_25%]",
   },
   {
-    num: "03",
+    num: "09",
     title: "Green Getways — Eco Tourism Platform",
     desc: "Visual storytelling meets utility. Immersive hero imagery anchored by a multi-tab booking widget — transparent pricing, frictionless path from discovery to checkout.",
     tags: ["Web Design", "Eco UX", "Figma"],
@@ -40,7 +106,7 @@ const projects = [
     type: "Web",
   },
   {
-    num: "04",
+    num: "10",
     title: "MSRTC Redesign — Maharashtra's Lifeline",
     desc: "Transforming a complex government portal into an accessible, intuitive experience for all demographics. Modern UI retaining the official brand identity.",
     tags: ["Gov UX", "Accessibility", "Figma"],
@@ -49,7 +115,7 @@ const projects = [
     type: "Web",
   },
   {
-    num: "05",
+    num: "11",
     title: "EcoPulse — Personalised Sustainability App",
     desc: "Bridging the gap between intention and action. Personalised carbon impact dashboard with gamified challenges and positive reinforcement loops.",
     tags: ["Gamification", "Mobile UX", "Figma"],
@@ -58,7 +124,7 @@ const projects = [
     type: "Mobile",
   },
   {
-    num: "06",
+    num: "12",
     title: "Pure Vessel — Conscious E-Commerce",
     desc: "Radical reduction. Editorial photography. The strongest UX sometimes comes from removing what isn't essential — a masterclass in restraint.",
     tags: ["E-Commerce", "Minimalism", "Figma"],
