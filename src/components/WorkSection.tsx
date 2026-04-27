@@ -172,9 +172,11 @@ const WorkSection = () => {
                   <motion.img
                     src={p.image}
                     alt={p.title}
-                    className={`w-full h-full ${p.imgClass || "object-cover object-top"}`}
+                    loading="lazy"
+                    decoding="async"
+                    className={`w-full h-full image-render-auto transform-gpu ${p.imgClass || "object-cover object-top"}`}
                     animate={{
-                      scale: hoveredIndex === i ? 1.05 : 1,
+                      scale: hoveredIndex === i ? 1.025 : 1,
                     }}
                     transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
                   />
